@@ -462,7 +462,11 @@ body {
 /* About Section */
 .about {
   padding: 6rem 0;
-  background: var(--bg);
+  background: linear-gradient(180deg, #1a1a2e 0%, #252542 100%);
+}
+
+[data-theme="light"] .about {
+  background: linear-gradient(180deg, #ffffff 0%, #f8f9fa 100%);
 }
 
 .features-grid {
@@ -543,7 +547,11 @@ body {
 /* Pricing Section */
 .pricing {
   padding: 6rem 0;
-  background: linear-gradient(180deg, var(--bg) 0%, var(--bg-card) 100%);
+  background: linear-gradient(180deg, #252542 0%, #1a1a2e 100%);
+}
+
+[data-theme="light"] .pricing {
+  background: linear-gradient(180deg, #f8f9fa 0%, #ffffff 100%);
 }
 
 .pricing-grid {
@@ -690,7 +698,11 @@ body {
 /* Contact Section */
 .contact {
   padding: 6rem 0;
-  background: var(--bg-card);
+  background: #252542;
+}
+
+[data-theme="light"] .contact {
+  background: #ffffff;
 }
 
 .contact-grid {
