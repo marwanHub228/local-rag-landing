@@ -26,17 +26,17 @@
 }
 
 [data-theme="light"] {
-  --bg: #CED2D7;
-  --bg-secondary: #C4C9CE;
-  --bg-card: #ffffff;
-  --bg-card-hover: #f8f9fa;
+  --bg: #ffffff;
+  --bg-secondary: #CED2D7;
+  --bg-card: #f8f9fa;
+  --bg-card-hover: #ffffff;
   --text: #1a1a2e;
   --text-secondary: #4a4a68;
   --text-muted: #7a7a8c;
-  --border: #d1d5db;
-  --border-light: #e5e7eb;
-  --shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
-  --shadow-lg: 0 8px 40px rgba(0, 0, 0, 0.12);
+  --border: #e5e7eb;
+  --border-light: #d1d5db;
+  --shadow: 0 4px 20px rgba(0, 0, 0, 0.06);
+  --shadow-lg: 0 8px 40px rgba(0, 0, 0, 0.1);
   --gradient: linear-gradient(135deg, #6366f1 0%, #8b5cf6 100%);
   --gradient-text: linear-gradient(135deg, #4f46e5 0%, #7c3aed 100%);
   --primary: #6366f1;
@@ -78,11 +78,11 @@ body {
 }
 
 [data-theme="light"] .navbar.scrolled {
-  background: rgba(206, 210, 215, 0.9);
+  background: rgba(255, 255, 255, 0.95);
 }
 
 [data-theme="light"] .footer {
-  background: #C4C9CE;
+  background: #CED2D7;
 }
 
 .nav-container {
@@ -174,7 +174,7 @@ body {
 }
 
 [data-theme="light"] .hero {
-  background: linear-gradient(135deg, #CED2D7 0%, #d8dde2 50%, #e2e6ea 100%);
+  background: linear-gradient(180deg, #ffffff 0%, #f8f9fa 100%);
   position: relative;
 }
 
@@ -186,9 +186,8 @@ body {
   width: 200%;
   height: 200%;
   background: 
-    radial-gradient(circle at 20% 80%, rgba(99, 102, 241, 0.08) 0%, transparent 50%),
-    radial-gradient(circle at 80% 20%, rgba(139, 92, 246, 0.08) 0%, transparent 50%),
-    radial-gradient(circle at 40% 40%, rgba(217, 70, 239, 0.05) 0%, transparent 40%);
+    radial-gradient(circle at 20% 80%, rgba(99, 102, 241, 0.06) 0%, transparent 50%),
+    radial-gradient(circle at 80% 20%, rgba(139, 92, 246, 0.06) 0%, transparent 50%);
   animation: lightPulse 8s ease-in-out infinite;
 }
 
@@ -779,7 +778,7 @@ body {
 /* Responsive */
 @media (max-width: 1024px) {
   [data-theme="light"] .hero {
-    background: linear-gradient(180deg, #CED2D7 0%, #C4C9CE 100%);
+    background: linear-gradient(180deg, #ffffff 0%, #f8f9fa 100%);
   }
   
   .features-grid,
