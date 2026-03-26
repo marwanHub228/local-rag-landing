@@ -77,8 +77,12 @@ body {
   border-bottom: 1px solid var(--border);
 }
 
+[data-theme="light"] .navbar {
+  background: #CED2D7;
+}
+
 [data-theme="light"] .navbar.scrolled {
-  background: rgba(255, 255, 255, 0.95);
+  background: rgba(206, 210, 215, 0.95);
 }
 
 [data-theme="light"] .footer {
