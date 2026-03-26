@@ -1,16 +1,85 @@
-# React + Vite
+# local-rag-landing
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+**A privacy-first, local RAG application.**
 
-Currently, two official plugins are available:
+> Your documents, your model, your machine. No data leaves your computer.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## Features
 
-## React Compiler
+- **100% Offline** - Works without internet
+- **Privacy-First** - All data stays on your machine
+- **Local LLM** - Uses Ollama for inference
+- **Multi-Format Support** - PDF, Markdown, plain text
+- **Source Citations** - See exactly where answers come from
+- **Open Source** - Fully transparent, auditable code
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## Tech Stack
 
-## Expanding the ESLint configuration
+| Component | Technology |
+|-----------|------------|
+| UI | React + Vite |
+| LLM | Ollama (Phi-3.5-mini / Llama 3.2 1B) |
+| Embeddings | all-MiniLM-L6-v2 |
+| Vector DB | ChromaDB |
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## Landing Page Sections
+
+- **Hero** - Introduction and call-to-action
+- **About Us** - Features for businesses and students
+- **Pricing** - Three tiers (Free, Professional, Enterprise)
+- **Contact** - Email, phone, and address
+
+## Getting Started
+
+### 1. Clone the repository
+
+```bash
+git clone https://github.com/marwanHub228/local-rag-landing.git
+cd local-rag-landing
+```
+
+### 2. Install dependencies
+
+```bash
+npm install
+```
+
+### 3. Run the development server
+
+```bash
+npm run dev
+```
+
+### 4. Build for production
+
+```bash
+npm run build
+```
+
+## Project Structure
+
+```
+local-rag-landing/
+├── src/
+│   ├── assets/            # Images and static assets
+│   ├── App.jsx            # Main React component
+│   ├── App.css            # Component styles
+│   ├── index.css          # Global styles
+│   └── main.jsx           # Entry point
+├── public/                 # Public assets
+├── index.html             # HTML template
+├── package.json           # Dependencies
+├── vite.config.js        # Vite configuration
+├── eslint.config.js      # ESLint configuration
+└── README.md              # This file
+```
+
+## Tech Stack
+
+- **React** - UI framework
+- **Vite** - Build tool and dev server
+- **CSS** - Styling
+
+## License
+
+MIT
